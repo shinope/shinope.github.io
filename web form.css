@@ -1,5 +1,5 @@
 body {
-    background-color: cyan;
+    background-color: rgb(200, 255, 0);
   }
   h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -8,8 +8,3 @@ body {
     border: 20%;
   }
 
-  label{
-    font-family: 'Courier New', Courier, monospace
-    ;
-    font-size: larger
-  }
