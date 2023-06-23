@@ -6,29 +6,31 @@
     <link rel="stylesheet" href="web form.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="airtablejs.js"></script>
     <title>Web form with captcha</title>
 </head>
 <body>
 
-    <div class="field" is info >
+
+  <form name="web form" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+
+    <div class="field" >
         <label class="label">First name</label>
         <div class="control">
-          <input class="input" type="text" placeholder="first name">
+          <input class="input is-primary" type="text" placeholder="first name" id="fname">
         </div>
       </div>
       
-      <div class="field">
+      <div class="field is is-dark">
         <label class="label">last name</label>
-          <input class="input is-success" type="text" placeholder="Last name">
+          <input class="input is-primary" type="text" placeholder="Last name" id="lname">
       </div>
       
       <div class="field">
         <label class="label">Email</label>
-          <input class="input is-danger" type="email" placeholder="Email" >
-            <i class="fas fa-envelope"></i>
-          </span>
-            <i class="fas fa-exclamation-triangle"></i>
-          </span>
+          <input class="input is-primary" type="email" placeholder="Email" id="email">
         </div>
       </div>
       
@@ -43,12 +45,14 @@
 
   <div class="field is-grouped">
     <div class="control">
-      <button class="button is-link">Submit</button>
+      <button class="button is-link" value="submit" id="button">Submit</button>
     </div>
+    
     <div class="control">
       <button class="button is-link is-light">Cancel</button>
     </div>
   </div>
 
+  </form>
     </body>
 </html>

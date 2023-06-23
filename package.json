@@ -1,0 +1,23 @@
+{
+  "name": "shinope.github.io",
+  "version": "1.0.0",
+  "description": "idk",
+  "main": "airtablejs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinope/shinope.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shinope/shinope.github.io/issues"
+  },
+  "homepage": "https://github.com/shinope/shinope.github.io#readme",
+  "dependencies": {
+    "airtable": "^0.12.1",
+    "express": "^4.18.2"
+  }
+}
