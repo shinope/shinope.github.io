@@ -7,19 +7,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="airtablejs.js"></script>
+    <script src="app.js"></script>
     <title>Web form with captcha</title>
 </head>
 <body>
 
 
   <form name="web form" action="/action_page.php" onsubmit="return validateForm()" method="post">
-    Name: <input type="text" name="fname">
-    <input type="submit" value="Submit">
-
     <div class="field" >
         <label class="label">First name</label>
         <div class="control">
-          <input class="input is-primary" type="text" placeholder="first name" id="fname">
+          <input class="input is-primary" type="text" placeholder="first name" id="fname" placeholder="mahmud "> 
         </div>
       </div>
       
