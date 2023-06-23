@@ -6,31 +6,43 @@
     <link rel="stylesheet" href="web form.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="airtablejs.js"></script>
-    <script src="app.js"></script>
+    <script src="umber.js"></script>
     <title>Web form with captcha</title>
 </head>
 <body>
 
 
   <form name="web form" action="/action_page.php" onsubmit="return validateForm()" method="post">
-    <div class="field" >
-        <label class="label">First name</label>
-        <div class="control">
-          <input class="input is-primary" type="text" placeholder="first name" id="fname" placeholder="mahmud "> 
-        </div>
-      </div>
-      
-      <div class="field is is-dark">
-        <label class="label">last name</label>
-          <input class="input is-primary" type="text" placeholder="Last name" id="lname">
-      </div>
-      
-      <div class="field">
-        <label class="label">Email</label>
-          <input class="input is-primary" type="email" placeholder="Email" id="email">
-        </div>
-      </div>
+
+<div class="field">
+  <label class="label">fname</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="mahmud" value="mahmud" id="fname">
+  </div>
+</div>
+
+
+<div class="field">
+  <label class="label">lname</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="ibrahim" value="ibrahim" id="lname">
+  </div>
+</div>
+
+
+<div class="field">
+  <label class="label">Email</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-danger" type="email" placeholder="Email" value="mk66776677@gmail.com" id="email">
+    <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-exclamation-triangle"></i>
+    </span>
+  </div>
+  <p class="help is-danger">This email is invalid</p>
+</div>
       
 
       <div class="g-recaptcha"
@@ -39,6 +51,7 @@
       data-expired-callback="onRecaptchaResponseExpiry"
       data-error-callback="onRecaptchaError">
   </div>
+
   </div>
 
   <div class="field is-grouped">
